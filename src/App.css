@@ -214,3 +214,31 @@
         top: 0;
         z-index: 100;
     }
+    
+    .skilla :hover {
+        background-color: lightblue;
+    }
+    
+    .resume:hover {
+        background-color: aqua;
+    }
+    
+    #csicon:hover {
+        background-color: aqua;
+        border: solid 3px blue;
+    }
+    
+    #cdicon:hover {
+        background-color: aqua;
+        border: solid 3px blue;
+    }
+    
+    #paicon:hover {
+        background-color: aqua;
+        border: solid 3px blue;
+    }
+    
+    .imgs:hover {
+        transition: 0.5s;
+        transform: scale(1.1)
+    }
