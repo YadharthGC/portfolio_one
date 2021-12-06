@@ -289,10 +289,7 @@ function About() {
             </div>
             <div className="dataone">
               <div className="wi">
-                <a
-                  href="https://yadharthscrapping.netlify.app/"
-                  target="_blank"
-                >
+                <a href="https://yadharthwebscrap.netlify.app/" target="_blank">
                   <img
                     src="./images/scrap.png"
                     class="imgs"
