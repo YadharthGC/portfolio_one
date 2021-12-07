@@ -108,15 +108,18 @@ body {
 }
 
 #email:hover {
-    color: blue
+    background-color: aqua;
+    border: solid 6px blue;
 }
 
 #in:hover {
-    color: blue
+    background-color: aqua;
+    border: solid 6px blue;
 }
 
 #git:hover {
-    color: blue
+    background-color: aqua;
+    border: solid 6px blue;
 }
 
 #partd {
@@ -262,6 +265,7 @@ body {
 
 .resume:hover {
     background-color: aqua;
+    border: solid 3px blue;
 }
 
 #csicon:hover {
@@ -288,6 +292,17 @@ body {
     min-height: 0px;
     height: auto;
     transition-duration: 275ms;
+}
+
+#sks:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    background-color: blue;
+    color: aqua;
+}
+
+#sk {
+    margin-bottom: 2%;
 }
 
 #sectiona {
@@ -343,7 +358,7 @@ body {
 }
 
 #oi {
-    color: black
+    color: black;
 }
 
 #oi:hover {

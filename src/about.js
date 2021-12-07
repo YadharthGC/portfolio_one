@@ -273,8 +273,8 @@ function About() {
               <u>Skills</u>
             </div>
           </div>
-          <div className="data">
-            <div className="dataone">
+          <div className="data" id="sk">
+            <div className="dataone" id="sks">
               <div className="wd">
                 <span className="main">Web Design</span>
               </div>
@@ -293,7 +293,7 @@ function About() {
                 production and graphic design
               </div>
             </div>
-            <div className="dataone">
+            <div className="dataone" id="sks">
               <div className="wd">
                 <span className="main">Web Development</span>
               </div>
@@ -312,7 +312,7 @@ function About() {
                 programming and database management.
               </div>
             </div>
-            <div className="dataone">
+            <div className="dataone" id="sks">
               <div className="wd">
                 <span className="main">Responsive Design</span>
               </div>
