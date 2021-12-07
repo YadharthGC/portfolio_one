@@ -196,7 +196,7 @@ function About() {
                       target="_blank"
                       title="https://www.linkedin.com/in/yadharth/"
                     >
-                      <LinkedInIcon id="in" style={{ marginLeft: "5%" }} />
+                      <LinkedInIcon id="in" style={{ marginLeft: "2%" }} />
                     </a>
                     <a
                       href="https://github.com/YadharthGC?tab=repositories"
