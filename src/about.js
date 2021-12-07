@@ -344,8 +344,20 @@ function About() {
               <div className="wt">Online service booking</div>
               <div className="gf">
                 <div>
-                  <GitHubIcon />
-                  <GitHubIcon />
+                  <a
+                    href="https://github.com/YadharthGC/capstonereact"
+                    target="_blank"
+                    title="Front-end"
+                  >
+                    <GitHubIcon id="oi" />
+                  </a>
+                  <a
+                    href="https://github.com/YadharthGC/capstonenode"
+                    target="_blank"
+                    title="Back-end"
+                  >
+                    <GitHubIcon id="oi" />
+                  </a>
                 </div>
                 <div>
                   <Typography
@@ -408,8 +420,20 @@ function About() {
               <div className="wt">BagIT-Ecommerce</div>
               <div className="gf">
                 <div>
-                  <GitHubIcon />
-                  <GitHubIcon />
+                  <a
+                    href="https://github.com/YadharthGC/ecommerce"
+                    target="_blank"
+                    title="Front-end"
+                  >
+                    <GitHubIcon id="oi" />
+                  </a>
+                  <a
+                    href="https://github.com/YadharthGC/ecommerce_node"
+                    target="_blank"
+                    title="Back-end"
+                  >
+                    <GitHubIcon id="oi" />
+                  </a>
                 </div>
                 <div>
                   <Typography
@@ -473,8 +497,20 @@ function About() {
               <div className="wt">Web-Scrap</div>
               <div className="gf">
                 <div>
-                  <GitHubIcon />
-                  <GitHubIcon />
+                  <a
+                    href="https://github.com/YadharthGC/webscrap"
+                    target="_blank"
+                    title="Front-end"
+                  >
+                    <GitHubIcon id="oi" />
+                  </a>
+                  <a
+                    href="https://github.com/YadharthGC/flipkartscrap"
+                    target="_blank"
+                    title="Back-end"
+                  >
+                    <GitHubIcon id="oi" />
+                  </a>
                 </div>
                 <div>
                   <Typography
