@@ -1,13 +1,27 @@
 import "./App.css";
-import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
-import ComputerSharpIcon from "@mui/icons-material/ComputerSharp";
-import CodeIcon from "@mui/icons-material/Code";
-import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import * as React from "react";
+import Typical from "react-typical";
+import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import Popover from "@mui/material/Popover";
+import Typography from "@mui/material/Typography";
 
 function About() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handlePopoverOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handlePopoverClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
@@ -58,7 +72,9 @@ function About() {
                     aria-current="page"
                     href="#sectionb"
                   >
-                    <span className="y"> Skills</span>
+                    <span className="y" style={{ color: "black" }}>
+                      Skills
+                    </span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -83,7 +99,21 @@ function About() {
               &nbsp; Hari Yadharth GC
             </div>
             <div className="full">
-              <u>Full Stack Developer</u>
+              <u>
+                <Typical
+                  loop={Infinity}
+                  steps={[
+                    "Front-end Developer",
+                    1000,
+                    "Back-end Developer",
+                    1000,
+                    "Full-stack Developer",
+                    1000,
+                    "Web Developer",
+                    1000,
+                  ]}
+                />
+              </u>
             </div>
           </div>
         </div>
@@ -94,7 +124,43 @@ function About() {
             <div className="row">
               <div className="col-lg-5" id="parta">
                 <div className="imga">
-                  <img src="./images/Yadharth.jpg" className="hariimg" />
+                  <div
+                    id="carouselExampleSlidesOnly"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div className="carousel-inner">
+                      <div className="carousel-item active">
+                        <img
+                          src="./images/y1.jpg"
+                          alt="..."
+                          className="hariimg"
+                          style={{ objectFit: "contain" }}
+                        />
+                      </div>
+                      <div className="carousel-item">
+                        <img
+                          src="./images/y2.jpg"
+                          alt="..."
+                          className="hariimg"
+                        />
+                      </div>
+                      <div className="carousel-item">
+                        <img
+                          src="./images/y3.jpg"
+                          alt="..."
+                          className="hariimg"
+                        />
+                      </div>
+                      <div className="carousel-item">
+                        <img
+                          src="./images/y4.jpg"
+                          alt="..."
+                          className="hariimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="col-lg-7" id="partb">
@@ -143,31 +209,6 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="row">
-              <div className="col-lg-12" id="partc">
-                <div className="parte">
-                  <div className="partx">
-                    <div className="skills">
-                      <u>
-                        <span className="main">Skills</span>
-                      </u>
-                    </div>
-                    <div className="skilla">
-                      <div className="skill">C-programming</div>
-                      <div className="skill">C++</div>
-                      <div className="skill">Javascript</div>
-                      <div className="skill">HTML</div>
-                      <div className="skill">CSS</div>
-                      <div className="skill">Bootstrap</div>
-                      <div className="skill">Reactjs</div>
-                      <div className="skill">Nodejs</div>
-                      <div className="skill">Mongodb</div>
-                      <div className="skill">Express</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           <div className="col-lg-6" id="partd">
             <div className="new">
@@ -190,7 +231,16 @@ function About() {
                   style={{ textDecoration: "none" }}
                 >
                   <button className="resume">
-                    <span className="main">Resume</span>
+                    <span className="main">
+                      Resume
+                      <lord-icon
+                        src="https://cdn.lordicon.com/puvaffet.json"
+                        trigger="loop"
+                        colors="primary:#121331,secondary:#08a88a"
+                        id="ball"
+                      ></lord-icon>
+                      &#8594;
+                    </span>
                   </button>
                 </a>
               </div>
@@ -210,11 +260,16 @@ function About() {
           <div className="data">
             <div className="dataone">
               <div className="wd">
-                {" "}
                 <span className="main">Web Design</span>
               </div>
               <div className="wi">
-                <ComputerSharpIcon id="csicon" />
+                <lord-icon
+                  src="https://cdn.lordicon.com/isvvzjbf.json"
+                  trigger="loop"
+                  colors="primary:#121331,secondary:#08a88a"
+                  className="apple"
+                  id="csicon"
+                ></lord-icon>
               </div>
               <div className="wt">
                 Web design is the process of creating websites. It encompasses
@@ -227,7 +282,13 @@ function About() {
                 <span className="main">Web Development</span>
               </div>
               <div className="wi">
-                <CodeIcon id="cdicon" />
+                <lord-icon
+                  src="https://cdn.lordicon.com/nxaaasqe.json"
+                  trigger="loop"
+                  colors="primary:#121331,secondary:#08a88a"
+                  className="apple"
+                  id="cdicon"
+                ></lord-icon>
               </div>
               <div className="wt">
                 Web development refers to building, creating websites. It
@@ -240,7 +301,14 @@ function About() {
                 <span className="main">Responsive Design</span>
               </div>
               <div className="wi">
-                <PhoneAndroidIcon id="paicon" />
+                <lord-icon
+                  src="https://cdn.lordicon.com/qhgmphtg.json"
+                  trigger="loop"
+                  delay="2"
+                  colors="primary:#121331,secondary:#08a88a"
+                  className="apple"
+                  id="paicon"
+                ></lord-icon>
               </div>
               <div className="wt">
                 Responsive web design is about creating web pages that look good
@@ -273,7 +341,59 @@ function About() {
                   />
                 </a>
               </div>
-              <div className="wt">Online motorcycle service booking</div>
+              <div className="wt">Online service booking</div>
+              <div className="gf">
+                <div>
+                  <GitHubIcon />
+                  <GitHubIcon />
+                </div>
+                <div>
+                  <Typography
+                    aria-owns={open ? "mouse-over-popover" : undefined}
+                    aria-haspopup="true"
+                    onMouseEnter={handlePopoverOpen}
+                    onMouseLeave={handlePopoverClose}
+                  >
+                    <MoreHorizIcon />
+                  </Typography>
+                  <Popover
+                    id="mouse-over-popover"
+                    sx={{
+                      pointerEvents: "none",
+                    }}
+                    open={open}
+                    anchorEl={anchorEl}
+                    anchorOrigin={{
+                      vertical: "bottom",
+                      horizontal: "right",
+                    }}
+                    transformOrigin={{
+                      vertical: "bottom",
+                      horizontal: "right",
+                    }}
+                    onClose={handlePopoverClose}
+                    disableRestoreFocus
+                  >
+                    <Typography id="ta">
+                      <div className="main">Library</div>
+                      <div className="skilla" id="cat">
+                        <div className="skill">Reactjs</div>
+                        <div className="skill">Nodejs</div>
+                      </div>
+
+                      <div className="main">NPMs</div>
+                      <div className="skilla" style={{ width: "100%" }}>
+                        <div className="skill">Axios</div>
+                        <div className="skill">Express</div>
+                        <div className="skill">Cors</div>
+                        <div className="skill">Bcrypt</div>
+                        <div className="skill">JSONwebToken</div>
+                        <div className="skill">MongoDB</div>
+                      </div>
+                    </Typography>
+                  </Popover>
+                </div>
+              </div>
             </div>
             <div className="dataone">
               <div className="wi">
@@ -286,6 +406,59 @@ function About() {
                 </a>
               </div>
               <div className="wt">BagIT-Ecommerce</div>
+              <div className="gf">
+                <div>
+                  <GitHubIcon />
+                  <GitHubIcon />
+                </div>
+                <div>
+                  <Typography
+                    aria-owns={open ? "mouse-over-popover" : undefined}
+                    aria-haspopup="true"
+                    onMouseEnter={handlePopoverOpen}
+                    onMouseLeave={handlePopoverClose}
+                  >
+                    <MoreHorizIcon />
+                  </Typography>
+                  <Popover
+                    id="mouse-over-popover"
+                    sx={{
+                      pointerEvents: "none",
+                    }}
+                    open={open}
+                    anchorEl={anchorEl}
+                    anchorOrigin={{
+                      vertical: "bottom",
+                      horizontal: "right",
+                    }}
+                    transformOrigin={{
+                      vertical: "bottom",
+                      horizontal: "right",
+                    }}
+                    onClose={handlePopoverClose}
+                    disableRestoreFocus
+                  >
+                    <Typography id="ta">
+                      <div className="main">Library</div>
+                      <div className="skilla" id="cat">
+                        <div className="skill">Reactjs</div>
+                        <div className="skill">Nodejs</div>
+                      </div>
+
+                      <div className="main">NPMs</div>
+                      <div className="skilla" style={{ width: "100%" }}>
+                        <div className="skill">Razorpay</div>
+                        <div className="skill">Axios</div>
+                        <div className="skill">Express</div>
+                        <div className="skill">Cors</div>
+                        <div className="skill">Bcrypt</div>
+                        <div className="skill">JSONwebToken</div>
+                        <div className="skill">MongoDB</div>
+                      </div>
+                    </Typography>
+                  </Popover>
+                </div>
+              </div>
             </div>
             <div className="dataone">
               <div className="wi">
@@ -298,29 +471,60 @@ function About() {
                 </a>
               </div>
               <div className="wt">Web-Scrap</div>
-            </div>
-            <div className="dataone">
-              <div className="wi">
-                <a
-                  href="https://yadharthcatsaxios.netlify.app/"
-                  target="_blank"
-                >
-                  <img src="./images/cat.png" class="imgs" title="CatsAPI" />
-                </a>
+              <div className="gf">
+                <div>
+                  <GitHubIcon />
+                  <GitHubIcon />
+                </div>
+                <div>
+                  <Typography
+                    aria-owns={open ? "mouse-over-popover" : undefined}
+                    aria-haspopup="true"
+                    onMouseEnter={handlePopoverOpen}
+                    onMouseLeave={handlePopoverClose}
+                  >
+                    <MoreHorizIcon />
+                  </Typography>
+                  <Popover
+                    id="mouse-over-popover"
+                    sx={{
+                      pointerEvents: "none",
+                    }}
+                    open={open}
+                    anchorEl={anchorEl}
+                    anchorOrigin={{
+                      vertical: "bottom",
+                      horizontal: "right",
+                    }}
+                    transformOrigin={{
+                      vertical: "bottom",
+                      horizontal: "right",
+                    }}
+                    onClose={handlePopoverClose}
+                    disableRestoreFocus
+                  >
+                    <Typography id="ta">
+                      <div className="main">Library</div>
+                      <div className="skilla" id="cat">
+                        <div className="skill">Reactjs</div>
+                        <div className="skill">Nodejs</div>
+                      </div>
+
+                      <div className="main">NPMs</div>
+                      <div className="skilla" style={{ width: "100%" }}>
+                        <div className="skill">Axios</div>
+                        <div className="skill">Puppeteer</div>
+                        <div className="skill">Express</div>
+                        <div className="skill">Cors</div>
+                        <div className="skill">Bcrypt</div>
+                        <div className="skill">JSONwebToken</div>
+                        <div className="skill">MongoDB</div>
+                      </div>
+                    </Typography>
+                  </Popover>
+                  {/* <MoreHorizIcon /> */}
+                </div>
               </div>
-              <div className="wt">Cats_API</div>
-            </div>
-            <div className="dataone">
-              <div className="wi">
-                <a href="https://yadharthcrud.netlify.app/" target="_blank">
-                  <img
-                    src="./images/crud.png"
-                    class="imgs"
-                    title="Basic CRUD operation"
-                  />
-                </a>
-              </div>
-              <div className="wt">CRUD</div>
             </div>
           </div>
         </div>

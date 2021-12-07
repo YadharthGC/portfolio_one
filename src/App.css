@@ -1,244 +1,342 @@
-    .name {
-        width: 100%;
-        height: 80vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: solid;
-        background-image: url(./images/blue.png);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-    
-    .hari {
-        color: white;
-        font-size: 200%;
-        font-family: 'Cinzel Decorative', cursive;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .full {
-        font-size: 113%;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #con {
-        margin-top: 2%;
-    }
-    
-    .hariimg {
-        width: 225px;
-        height: 190px;
-        object-fit: cover;
-        border-radius: 5px;
-    }
-    
-    #parta {
-        padding: 0%;
-        margin: 0%;
-    }
-    
-    #partb {
-        padding: 0%;
-        margin: 0%;
-    }
-    
-    #partc {
-        padding: 0%;
-        margin: 0%;
-        font-family: 'Outfit', sans-serif;
-    }
-    
-    #partd {
-        padding: 0%;
-        margin: 0%;
-        font-family: 'Josefin Sans', sans-serif;
-    }
-    
-    .keyans {
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: bolder;
-        font-size: 20px;
-        margin-top: 1%;
-        margin-bottom: 1%;
-    }
-    
-    .key {
-        color: grey;
-        font-size: 16px;
-    }
-    
-    .skilla {
-        font-family: 'Josefin Sans', sans-serif;
-        display: flex;
-        width: 80%;
-        flex-wrap: wrap;
-        row-gap: 5px;
-        column-gap: 5px;
-    }
-    
-    .skill {
-        border: solid 2px lightgray;
-        padding: 1px;
-    }
-    
-    .parte {
-        font-family: 'Outfit', sans-serif;
-        font-weight: bolder;
-        font-size: 20px;
-        margin: 2%
-    }
-    
-    #partd {
-        font-family: 'Outfit', sans-serif;
-        font-weight: bolder;
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        margin-top: 1%;
-    }
-    
-    .imga {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .resume {
-        background-color: lightblue;
-        color: white;
-        border: solid 2px lightgray;
-    }
-    
-    .data {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: center;
-        row-gap: 12px;
-        column-gap: 110px;
-        margin-top: 3%;
-    }
-    
-    .dataone {
-        font-family: 'Outfit', sans-serif;
-        font-weight: bolder;
-        font-size: 20px;
-        width: 270px;
-        background-color: white;
-    }
-    
-    .spl,
-    .wd,
-    .wi,
-    .wt {
-        text-align: center;
-    }
-    
-    .wi {
-        margin-top: 4px;
-    }
-    
-    .wt {
-        font-family: 'Josefin Sans', sans-serif;
-    }
-    
-    .imgs {
-        height: 200px;
-        width: 200px;
-        object-fit: cover;
-        border: solid 1px black
-    }
-    
-    .main {
-        font-family: 'Cinzel Decorative', cursive;
-    }
-    
-    #git,
-    #in,
-    #email {
-        font-size: 50px;
-        padding: 2%;
-        border: solid;
-        border-radius: 50%;
-    }
-    
-    .new {
-        font-family: 'Josefin Sans', sans-serif;
-    }
-    
-    .resumebtn {
-        margin-top: 2%;
-        margin-left: 1%;
-    }
-    
-    #csicon,
-    #cdicon,
-    #paicon {
-        font-size: 60px;
-        border: solid 4px rgb(135, 217, 231);
-        border-radius: 50%;
-        padding: 5%;
-    }
-    
-    .develop {
-        font-family: 'Outfit', sans-serif;
-        color: rgb(71, 66, 66);
-        margin-top: 4%;
-        height: 7vh;
-        font-weight: bolder;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(200, 230, 240);
-    }
-    
-    .x {
-        font-family: 'Cinzel Decorative', cursive;
-    }
-    
-    .y {
-        font-family: 'Outfit', sans-serif;
-        font-weight: 500;
-    }
-    
-    #nav {
-        position: sticky;
-        top: 0;
-        z-index: 100;
-    }
-    
-    .skilla :hover {
-        background-color: lightblue;
-    }
-    
-    .resume:hover {
-        background-color: aqua;
-    }
-    
-    #csicon:hover {
-        background-color: aqua;
-        border: solid 3px blue;
-    }
-    
-    #cdicon:hover {
-        background-color: aqua;
-        border: solid 3px blue;
-    }
-    
-    #paicon:hover {
-        background-color: aqua;
-        border: solid 3px blue;
-    }
-    
-    .imgs:hover {
-        transition: 0.5s;
-        transform: scale(1.1)
-    }
+html,
+body {
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+.name {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    background-image: url(./images/blue.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hari {
+    color: white;
+    font-size: 200%;
+    font-family: 'Cinzel Decorative', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full {
+    font-size: 113%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#con {
+    margin-top: 2%;
+}
+
+.hariimg {
+    width: 225px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#parta {
+    padding: 0%;
+    margin: 0%;
+}
+
+#partb {
+    padding: 0%;
+    margin: 0%;
+}
+
+#partc {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Outfit', sans-serif;
+}
+
+#partd {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.keyans {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.key {
+    color: grey;
+    font-size: 16px;
+}
+
+.skilla {
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.skill {
+    border: solid 2px lightgray;
+    padding: 1px;
+}
+
+.parte {
+    font-family: 'Outfit', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 2%
+}
+
+#email,
+#in,
+#git {
+    color: black
+}
+
+#email:hover {
+    color: blue
+}
+
+#in:hover {
+    color: blue
+}
+
+#git:hover {
+    color: blue
+}
+
+#partd {
+    font-family: 'Outfit', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1%;
+}
+
+.imga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume {
+    background-color: lightblue;
+    color: white;
+    border: solid 2px lightgray;
+}
+
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    row-gap: 12px;
+    column-gap: 110px;
+    margin-top: 3%;
+}
+
+.dataone {
+    font-family: 'Outfit', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    width: 270px;
+    background-color: white;
+}
+
+.spl,
+.wd,
+.wi,
+.wt {
+    text-align: center;
+}
+
+.wi {
+    margin-top: 4px;
+}
+
+.wt {
+    margin-top: 2.5%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.imgs {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: solid 1px black
+}
+
+.main {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+#git,
+#in,
+#email {
+    font-size: 50px;
+    padding: 2%;
+    border: solid;
+    border-radius: 50%;
+}
+
+.new {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.resumebtn {
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+#csicon,
+#cdicon,
+#paicon {
+    height: 41%;
+    width: 40%;
+    border: solid;
+    border-radius: 50%;
+    color: black;
+}
+
+.develop {
+    font-family: 'Outfit', sans-serif;
+    color: rgb(71, 66, 66);
+    margin-top: 4%;
+    height: 10vhvh;
+    font-weight: bolder;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    background-color: rgb(200, 230, 240);
+}
+
+.connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+}
+
+.connectitems {
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.x {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.y {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+}
+
+#nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.skilla :hover {
+    background-color: lightblue;
+}
+
+.resume:hover {
+    background-color: aqua;
+}
+
+#csicon:hover {
+    background-color: aqua;
+    border: solid 6px blue;
+}
+
+#cdicon:hover {
+    background-color: aqua;
+    border: solid 6px blue;
+}
+
+#paicon:hover {
+    background-color: aqua;
+    border: solid 6px blue;
+}
+
+.imgs:hover {
+    transition: 0.5s;
+    transform: scale(1.1)
+}
+
+#abc {
+    min-height: 0px;
+    height: auto;
+    transition-duration: 275ms;
+}
+
+#sectiona {
+    padding-bottom: 1%;
+}
+
+.apple {
+    height: 41%;
+    width: 40%;
+    border: solid;
+    border-radius: 50%;
+}
+
+#ball {
+    width: 43px;
+    height: 48px
+}
+
+#xa,
+#xb,
+#xc {
+    font-size: 32px;
+    color: brown;
+}
+
+#xa:hover {
+    color: blue
+}
+
+#xb:hover {
+    color: blue
+}
+
+#xc:hover {
+    color: blue
+}
+
+.gf {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#ta {
+    height: 100%;
+    width: 270px
+}
+
+#cat {
+    width: 100%;
+    height: 100%;
+}
