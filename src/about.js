@@ -11,16 +11,32 @@ import Typography from "@mui/material/Typography";
 
 function About() {
   const [anchorEl, setAnchorEl] = React.useState(null);
-
+  const [anchorElc, setAnchorElc] = React.useState(null);
   const handlePopoverOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
-
   const handlePopoverClose = () => {
     setAnchorEl(null);
   };
-
   const open = Boolean(anchorEl);
+  ////////////////////////////////////////
+  const [anchorEla, setAnchorEla] = React.useState(null);
+  const handlePopoverOpena = (eventa) => {
+    setAnchorEla(eventa.currentTarget);
+  };
+  const handlePopoverClosea = () => {
+    setAnchorEla(null);
+  };
+  const opena = Boolean(anchorEla);
+  ////////////////////////////////////////
+  const [anchorElb, setAnchorElb] = React.useState(null);
+  const handlePopoverOpenb = (eventb) => {
+    setAnchorElb(eventb.currentTarget);
+  };
+  const handlePopoverCloseb = () => {
+    setAnchorElb(null);
+  };
+  const openb = Boolean(anchorElb);
 
   return (
     <div>
@@ -226,7 +242,7 @@ function About() {
               </div>
               <div className="resumebtn">
                 <a
-                  href="https://drive.google.com/file/d/1lbHCpoc6hFkUJDIYor5Y9eb7ku91ippD/view"
+                  href="https://drive.google.com/file/d/1mMNFJDNwKP-A7TBdP-xnCE7tLxo5_nHM/view"
                   target="_blank"
                   style={{ textDecoration: "none" }}
                 >
@@ -361,20 +377,21 @@ function About() {
                 </div>
                 <div>
                   <Typography
-                    aria-owns={open ? "mouse-over-popover" : undefined}
+                    aria-owns={opena ? "mouse-over-popover" : undefined}
                     aria-haspopup="true"
-                    onMouseEnter={handlePopoverOpen}
-                    onMouseLeave={handlePopoverClose}
+                    onMouseEnter={handlePopoverOpena}
+                    onMouseLeave={handlePopoverClosea}
                   >
                     <MoreHorizIcon />
                   </Typography>
                   <Popover
+                    data-target="#ta"
                     id="mouse-over-popover"
                     sx={{
                       pointerEvents: "none",
                     }}
-                    open={open}
-                    anchorEl={anchorEl}
+                    open={opena}
+                    anchorEl={anchorEla}
                     anchorOrigin={{
                       vertical: "bottom",
                       horizontal: "right",
@@ -383,7 +400,7 @@ function About() {
                       vertical: "bottom",
                       horizontal: "right",
                     }}
-                    onClose={handlePopoverClose}
+                    onClose={handlePopoverClosea}
                     disableRestoreFocus
                   >
                     <Typography id="ta">
@@ -445,6 +462,7 @@ function About() {
                     <MoreHorizIcon />
                   </Typography>
                   <Popover
+                    data-target="#tb"
                     id="mouse-over-popover"
                     sx={{
                       pointerEvents: "none",
@@ -462,7 +480,7 @@ function About() {
                     onClose={handlePopoverClose}
                     disableRestoreFocus
                   >
-                    <Typography id="ta">
+                    <Typography id="tb">
                       <div className="main">Library</div>
                       <div className="skilla" id="cat">
                         <div className="skill">Reactjs</div>
@@ -516,8 +534,8 @@ function About() {
                   <Typography
                     aria-owns={open ? "mouse-over-popover" : undefined}
                     aria-haspopup="true"
-                    onMouseEnter={handlePopoverOpen}
-                    onMouseLeave={handlePopoverClose}
+                    onMouseEnter={handlePopoverOpenb}
+                    onMouseLeave={handlePopoverCloseb}
                   >
                     <MoreHorizIcon />
                   </Typography>
@@ -526,8 +544,8 @@ function About() {
                     sx={{
                       pointerEvents: "none",
                     }}
-                    open={open}
-                    anchorEl={anchorEl}
+                    open={openb}
+                    anchorEl={anchorElb}
                     anchorOrigin={{
                       vertical: "bottom",
                       horizontal: "right",
@@ -536,7 +554,7 @@ function About() {
                       vertical: "bottom",
                       horizontal: "right",
                     }}
-                    onClose={handlePopoverClose}
+                    onClose={handlePopoverCloseb}
                     disableRestoreFocus
                   >
                     <Typography id="ta">
@@ -548,12 +566,10 @@ function About() {
 
                       <div className="main">NPMs</div>
                       <div className="skilla" style={{ width: "100%" }}>
-                        <div className="skill">Axios</div>
                         <div className="skill">Puppeteer</div>
+                        <div className="skill">Axios</div>
                         <div className="skill">Express</div>
                         <div className="skill">Cors</div>
-                        <div className="skill">Bcrypt</div>
-                        <div className="skill">JSONwebToken</div>
                         <div className="skill">MongoDB</div>
                       </div>
                     </Typography>
