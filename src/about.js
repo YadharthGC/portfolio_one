@@ -347,7 +347,7 @@ function About() {
             </span>
           </div>
           <div className="data">
-            <div className="dataone">
+            <div className="dataone" id="ole">
               <div className="wi">
                 <a href="https://yadharthservice.netlify.app/" target="_blank">
                   <img
@@ -424,7 +424,7 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="dataone">
+            <div className="dataone" id="ole">
               <div className="wi">
                 <a href="https://yadharthbagit.netlify.app/" target="_blank">
                   <img
@@ -502,7 +502,7 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="dataone">
+            <div className="dataone" id="ole">
               <div className="wi">
                 <a href="https://yadharthwebscrap.netlify.app/" target="_blank">
                   <img

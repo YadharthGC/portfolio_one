@@ -108,18 +108,21 @@ body {
 }
 
 #email:hover {
-    background-color: aqua;
-    border: solid 6px blue;
+    background-color: rgb(72, 77, 77);
+    border: solid 2px rgb(156, 148, 148);
+    color: white;
 }
 
 #in:hover {
-    background-color: aqua;
-    border: solid 6px blue;
+    background-color: rgb(72, 77, 77);
+    border: solid 2px rgb(156, 148, 148);
+    color: white;
 }
 
 #git:hover {
-    background-color: aqua;
-    border: solid 6px blue;
+    background-color: rgb(72, 77, 77);
+    border: solid 2px rgb(156, 148, 148);
+    color: white;
 }
 
 #partd {
@@ -149,7 +152,7 @@ body {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    row-gap: 12px;
+    row-gap: 25px;
     column-gap: 110px;
     margin-top: 3%;
 }
@@ -264,8 +267,8 @@ body {
 }
 
 .resume:hover {
-    background-color: aqua;
-    border: solid 3px blue;
+    background-color: rgb(87, 83, 83);
+    color: white;
 }
 
 
@@ -304,18 +307,18 @@ body {
 }
 
 #sks:hover #csicon {
-    background-color: aqua;
-    border: solid 6px blue;
+    background-color: rgb(87, 83, 83);
+    border: solid 6px white;
 }
 
 #sks:hover #paicon {
-    background-color: aqua;
-    border: solid 6px blue;
+    background-color: rgb(87, 83, 83);
+    border: solid 6px white;
 }
 
 #sks:hover #cdicon {
-    background-color: aqua;
-    border: solid 6px blue;
+    background-color: rgb(87, 83, 83);
+    border: solid 6px white;
 }
 
 #sk {
@@ -366,7 +369,7 @@ body {
 #ta,
 #tb {
     height: 100%;
-    width: 270px
+    width: 295px
 }
 
 #cat {
@@ -379,5 +382,21 @@ body {
 }
 
 #oi:hover {
-    color: blue;
+    color: rgb(42, 42, 218);
+}
+
+#ole:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    background-color: rgb(25, 25, 27);
+    color: white;
+}
+
+#ole:hover #oi {
+    color: white;
+}
+
+#ole:hover .imgs {
+    transition: 0.5s;
+    transform: scale(1.1)
 }
