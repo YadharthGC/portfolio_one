@@ -268,7 +268,8 @@ body {
     border: solid 3px blue;
 }
 
-#csicon:hover {
+
+/* #csicon:hover {
     background-color: aqua;
     border: solid 6px blue;
 }
@@ -276,12 +277,13 @@ body {
 #cdicon:hover {
     background-color: aqua;
     border: solid 6px blue;
-}
+} */
 
-#paicon:hover {
+
+/* #paicon:hover {
     background-color: aqua;
     border: solid 6px blue;
-}
+} */
 
 .imgs:hover {
     transition: 0.5s;
@@ -297,8 +299,23 @@ body {
 #sks:hover {
     transition: 0.5s;
     transform: scale(1.1);
-    background-color: blue;
-    color: aqua;
+    background-color: rgb(25, 25, 27);
+    color: white;
+}
+
+#sks:hover #csicon {
+    background-color: aqua;
+    border: solid 6px blue;
+}
+
+#sks:hover #paicon {
+    background-color: aqua;
+    border: solid 6px blue;
+}
+
+#sks:hover #cdicon {
+    background-color: aqua;
+    border: solid 6px blue;
 }
 
 #sk {
