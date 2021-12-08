@@ -289,7 +289,7 @@ function About() {
               </div>
               <div className="wt">
                 Web design is the process of creating websites. It encompasses
-                seversl different aspects, including webpage layout, content
+                several different aspects, including webpage layout, content
                 production and graphic design
               </div>
             </div>
