@@ -349,7 +349,7 @@ function About() {
           <div className="data">
             <div className="dataone" id="ole">
               <div className="wi">
-                <a href="https://yadharthservice.netlify.app/" target="_blank">
+                <a href="https://yadharthobito.netlify.app/" target="_blank">
                   <img
                     src="./images/service.png"
                     class="imgs"
@@ -361,7 +361,7 @@ function About() {
               <div className="gf">
                 <div>
                   <a
-                    href="https://github.com/YadharthGC/capstonereact"
+                    href="https://github.com/YadharthGC/obito"
                     target="_blank"
                     title="Front-end"
                   >
