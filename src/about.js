@@ -516,7 +516,7 @@ function About() {
 
                       <div className="main">NPMs</div>
                       <div className="skilla" style={{ width: "100%" }}>
-                        <div className="skill">Razorpay</div>
+                        <div className="skill">Paypal</div>
                         <div className="skill">Axios</div>
                         <div className="skill">Express</div>
                         <div className="skill">Cors</div>
@@ -684,7 +684,7 @@ function About() {
             <div className="dataone" id="ole">
               <div className="wi">
                 <a
-                  href="https://yadharthcatsaxios.netlify.app/Allcats"
+                  href="https://yadharthcatsaxios.netlify.app/"
                   target="_blank"
                 >
                   <img src="./images/cat.png" class="imgs" title="Cats_API" />
