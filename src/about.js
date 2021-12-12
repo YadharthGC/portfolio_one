@@ -269,7 +269,7 @@ function About() {
               </div>
               <div className="resumebtn">
                 <a
-                  href="https://drive.google.com/file/d/1mMNFJDNwKP-A7TBdP-xnCE7tLxo5_nHM/view"
+                  href="https://drive.google.com/file/d/1HDzlKSV14Wh6YQoSaM3yzVpLjgSNxuwY/view"
                   target="_blank"
                   style={{ textDecoration: "none" }}
                 >
@@ -619,14 +619,14 @@ function About() {
               <div className="gf">
                 <div>
                   <a
-                    href="https://github.com/YadharthGC/webscrap"
+                    href="https://github.com/YadharthGC/blog"
                     target="_blank"
                     title="Front-end"
                   >
                     <GitHubIcon id="oi" />
                   </a>
                   <a
-                    href="https://github.com/YadharthGC/flipkartscrap"
+                    href="https://github.com/YadharthGC/blog_node"
                     target="_blank"
                     title="Back-end"
                   >
