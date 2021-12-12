@@ -37,6 +37,33 @@ function About() {
     setAnchorElb(null);
   };
   const openb = Boolean(anchorElb);
+  ////////////////////////////////////////
+  const [anchorElx, setAnchorElx] = React.useState(null);
+  const handlePopoverOpenx = (eventx) => {
+    setAnchorElx(eventx.currentTarget);
+  };
+  const handlePopoverClosex = () => {
+    setAnchorElx(null);
+  };
+  const openx = Boolean(anchorElx);
+  ////////////////////////////////////////
+  const [anchorEly, setAnchorEly] = React.useState(null);
+  const handlePopoverOpeny = (eventy) => {
+    setAnchorEly(eventy.currentTarget);
+  };
+  const handlePopoverClosey = () => {
+    setAnchorEly(null);
+  };
+  const openy = Boolean(anchorEly);
+  ////////////////////////////////////////
+  const [anchorElz, setAnchorElz] = React.useState(null);
+  const handlePopoverOpenz = (eventz) => {
+    setAnchorElz(eventz.currentTarget);
+  };
+  const handlePopoverClosez = () => {
+    setAnchorElz(null);
+  };
+  const openz = Boolean(anchorElz);
 
   return (
     <div>
@@ -571,6 +598,204 @@ function About() {
                         <div className="skill">Express</div>
                         <div className="skill">Cors</div>
                         <div className="skill">MongoDB</div>
+                      </div>
+                    </Typography>
+                  </Popover>
+                  {/* <MoreHorizIcon /> */}
+                </div>
+              </div>
+            </div>
+            <div className="dataone" id="ole">
+              <div className="wi">
+                <a href="https://yadharthwebscrap.netlify.app/" target="_blank">
+                  <img
+                    src="./images/blog.png"
+                    class="imgs"
+                    title="Blog_website"
+                  />
+                </a>
+              </div>
+              <div className="wt">Blog_site</div>
+              <div className="gf">
+                <div>
+                  <a
+                    href="https://github.com/YadharthGC/webscrap"
+                    target="_blank"
+                    title="Front-end"
+                  >
+                    <GitHubIcon id="oi" />
+                  </a>
+                  <a
+                    href="https://github.com/YadharthGC/flipkartscrap"
+                    target="_blank"
+                    title="Back-end"
+                  >
+                    <GitHubIcon id="oi" />
+                  </a>
+                </div>
+                <div>
+                  <Typography
+                    aria-owns={open ? "mouse-over-popover" : undefined}
+                    aria-haspopup="true"
+                    onMouseEnter={handlePopoverOpenz}
+                    onMouseLeave={handlePopoverClosez}
+                  >
+                    <MoreHorizIcon />
+                  </Typography>
+                  <Popover
+                    id="mouse-over-popover"
+                    sx={{
+                      pointerEvents: "none",
+                    }}
+                    open={openz}
+                    anchorEl={anchorElz}
+                    anchorOrigin={{
+                      vertical: "bottom",
+                      horizontal: "right",
+                    }}
+                    transformOrigin={{
+                      vertical: "bottom",
+                      horizontal: "right",
+                    }}
+                    onClose={handlePopoverClosez}
+                    disableRestoreFocus
+                  >
+                    <Typography id="ta">
+                      <div className="main">Library</div>
+                      <div className="skilla" id="cat">
+                        <div className="skill">Reactjs</div>
+                        <div className="skill">Nodejs</div>
+                      </div>
+
+                      <div className="main">NPMs</div>
+                      <div className="skilla" style={{ width: "100%" }}>
+                        <div className="skill">Firebase</div>
+                        <div className="skill">Axios</div>
+                        <div className="skill">Express</div>
+                        <div className="skill">Cors</div>
+                        <div className="skill">MongoDB</div>
+                      </div>
+                    </Typography>
+                  </Popover>
+                  {/* <MoreHorizIcon /> */}
+                </div>
+              </div>
+            </div>
+            <div className="dataone" id="ole">
+              <div className="wi">
+                <a
+                  href="https://yadharthcatsaxios.netlify.app/Allcats"
+                  target="_blank"
+                >
+                  <img src="./images/cat.png" class="imgs" title="Cats_API" />
+                </a>
+              </div>
+              <div className="wt">Cats_API</div>
+              <div className="gf">
+                <div>
+                  <a
+                    href="https://github.com/YadharthGC/cats"
+                    target="_blank"
+                    title="Front-end"
+                  >
+                    <GitHubIcon id="oi" />
+                  </a>
+                </div>
+                <div>
+                  <Typography
+                    aria-owns={open ? "mouse-over-popover" : undefined}
+                    aria-haspopup="true"
+                    onMouseEnter={handlePopoverOpeny}
+                    onMouseLeave={handlePopoverClosey}
+                  >
+                    <MoreHorizIcon />
+                  </Typography>
+                  <Popover
+                    id="mouse-over-popover"
+                    sx={{
+                      pointerEvents: "none",
+                    }}
+                    open={openy}
+                    anchorEl={anchorEly}
+                    anchorOrigin={{
+                      vertical: "bottom",
+                      horizontal: "right",
+                    }}
+                    transformOrigin={{
+                      vertical: "bottom",
+                      horizontal: "right",
+                    }}
+                    onClose={handlePopoverClosey}
+                    disableRestoreFocus
+                  >
+                    <Typography id="ta">
+                      <div className="main">Library</div>
+                      <div className="skilla" id="cat">
+                        <div className="skill">Reactjs</div>
+                      </div>
+
+                      <div className="main">NPMs</div>
+                      <div className="skilla" style={{ width: "100%" }}>
+                        <div className="skill">Bootstrap</div>
+                        <div className="skill">Axios</div>
+                      </div>
+                    </Typography>
+                  </Popover>
+                  {/* <MoreHorizIcon /> */}
+                </div>
+              </div>
+            </div>
+            <div className="dataone" id="ole">
+              <div className="wi">
+                <a href="https://yadharthtvmaze.netlify.app/" target="_blank">
+                  <img src="./images/tv.png" class="imgs" title="TV_maze" />
+                </a>
+              </div>
+              <div className="wt">TV_maze</div>
+              <div className="gf">
+                <div>
+                  <a
+                    href="https://github.com/YadharthGC/tvmaze"
+                    target="_blank"
+                    title="Javascript"
+                  >
+                    <GitHubIcon id="oi" />
+                  </a>
+                </div>
+                <div>
+                  <Typography
+                    aria-owns={open ? "mouse-over-popover" : undefined}
+                    aria-haspopup="true"
+                    onMouseEnter={handlePopoverOpenx}
+                    onMouseLeave={handlePopoverClosex}
+                  >
+                    <MoreHorizIcon />
+                  </Typography>
+                  <Popover
+                    id="mouse-over-popover"
+                    sx={{
+                      pointerEvents: "none",
+                    }}
+                    open={openx}
+                    anchorEl={anchorElx}
+                    anchorOrigin={{
+                      vertical: "bottom",
+                      horizontal: "right",
+                    }}
+                    transformOrigin={{
+                      vertical: "bottom",
+                      horizontal: "right",
+                    }}
+                    onClose={handlePopoverClosex}
+                    disableRestoreFocus
+                  >
+                    <Typography id="ta">
+                      <div className="main">Library</div>
+                      <div className="skilla" id="cat">
+                        <div className="skill">Javascript</div>
+                        <div className="skill">HTML</div>
+                        <div className="skill">CSS</div>
+                        <div className="skill">Bootstrap</div>
                       </div>
                     </Typography>
                   </Popover>
