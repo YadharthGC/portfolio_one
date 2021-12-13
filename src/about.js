@@ -607,7 +607,7 @@ function About() {
             </div>
             <div className="dataone" id="ole">
               <div className="wi">
-                <a href="https://yadharthwebscrap.netlify.app/" target="_blank">
+                <a href="https://yadharthblog.netlify.app/" target="_blank">
                   <img
                     src="./images/blog.png"
                     class="imgs"
