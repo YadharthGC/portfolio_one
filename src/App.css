@@ -155,6 +155,7 @@ body {
     row-gap: 25px;
     column-gap: 110px;
     margin-top: 3%;
+    padding-bottom: 6%;
 }
 
 .dataone {
@@ -165,10 +166,13 @@ body {
     background-color: white;
 }
 
+.spl {
+    color: white;
+}
+
 .spl,
 .wd,
-.wi,
-.wt {
+.wi {
     text-align: center;
 }
 
@@ -177,7 +181,7 @@ body {
 }
 
 .wt {
-    margin-top: 2.5%;
+    margin-top: 3.5%;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -223,7 +227,7 @@ body {
 .develop {
     font-family: 'Outfit', sans-serif;
     color: rgb(71, 66, 66);
-    margin-top: 4%;
+    /* margin-top: 4%; */
     height: 10vhvh;
     font-weight: bolder;
     /* display: flex;
@@ -299,34 +303,53 @@ body {
     transition-duration: 275ms;
 }
 
+#sks {
+    padding: 13px;
+    /* border-radius: 3px; */
+    border: solid lightskyblue;
+}
+
 #sks:hover {
     transition: 0.5s;
     transform: scale(1.1);
-    background-color: rgb(25, 25, 27);
+    background-image: linear-gradient(to right top, #1526e8, #0086ff, #00b9f4, #00e0a8, #bcfc80);
     color: white;
+    border: none;
+    border-radius: 4px;
 }
 
 #sks:hover #csicon {
-    background-color: rgb(87, 83, 83);
+    background-image: linear-gradient(to bottom, #7ed8e0, #76e6d6, #89f1bf, #b1f9a1, #e4fb83);
     border: solid 6px white;
 }
 
 #sks:hover #paicon {
-    background-color: rgb(87, 83, 83);
+    background-image: linear-gradient(to bottom, #7ed8e0, #76e6d6, #89f1bf, #b1f9a1, #e4fb83);
     border: solid 6px white;
 }
 
 #sks:hover #cdicon {
-    background-color: rgb(87, 83, 83);
+    background-image: linear-gradient(to bottom, #7ed8e0, #76e6d6, #89f1bf, #b1f9a1, #e4fb83);
     border: solid 6px white;
 }
 
 #sk {
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 #sectiona {
+    margin-top: 7%;
     padding-bottom: 1%;
+    border: solid lightblue;
+}
+
+#sectiona:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    border: none;
+    background-image: linear-gradient(to right top, #1526e8, #0086ff, #00b9f4, #00e0a8, #bcfc80);
+    border-radius: 6px;
+    color: white
 }
 
 .apple {
@@ -369,7 +392,7 @@ body {
 #ta,
 #tb {
     height: 100%;
-    width: 295px
+    width: 285px
 }
 
 #cat {
@@ -385,11 +408,19 @@ body {
     color: rgb(42, 42, 218);
 }
 
+#ole {
+    border: solid lightblue;
+    padding: 5px;
+    padding-top: 7px;
+}
+
 #ole:hover {
     transition: 0.5s;
     transform: scale(1.1);
-    background-color: rgb(25, 25, 27);
+    background-image: linear-gradient(to right top, #1526e8, #0086ff, #00b9f4, #00e0a8, #bcfc80);
     color: white;
+    border: none;
+    border-radius: 4px;
 }
 
 #ole:hover #oi {
@@ -399,4 +430,24 @@ body {
 #ole:hover .imgs {
     transition: 0.5s;
     transform: scale(1.1)
+}
+
+.Portfolio {
+    background-image: radial-gradient(circle, #051937, #103d64, #136692, #0f93c0, #12c2eb);
+}
+
+hr {
+    color: white !important;
+    opacity: 1.25 !important;
+    margin-top: 9%;
+}
+
+.new {
+    padding: 8px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#skillhr {
+    margin-top: 3%;
 }

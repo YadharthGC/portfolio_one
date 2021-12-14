@@ -8,6 +8,7 @@ import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import Popover from "@mui/material/Popover";
 import Typography from "@mui/material/Typography";
+import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 
 function About() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -66,7 +67,7 @@ function About() {
   const openz = Boolean(anchorElz);
 
   return (
-    <div>
+    <div className="Portfolio">
       <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -320,6 +321,7 @@ function About() {
                 production and graphic design
               </div>
             </div>
+
             <div className="dataone" id="sks">
               <div className="wd">
                 <span className="main">Web Development</span>
@@ -361,16 +363,16 @@ function About() {
             </div>
           </div>
         </div>
-        <hr />
+        <hr id="skillhr" />
         <div className="proz" id="sectionc">
           <div style={{ textAlign: "center" }}>
             <span className="main" style={{ fontSize: "25px" }}>
-              PORTFOLIO
+              <span style={{ color: "white" }}> PORTFOLIO</span>
             </span>
           </div>
           <div style={{ textAlign: "center" }}>
             <span className="main">
-              <u>Projects Developed by me</u>
+              <u style={{ color: "white" }}>Projects Developed by me</u>
             </span>
           </div>
           <div className="data">
@@ -384,23 +386,25 @@ function About() {
                   />
                 </a>
               </div>
-              <div className="wt">Online service booking</div>
+              <div className="wt" style={{ textAlign: "center" }}>
+                Online service booking
+              </div>
               <div className="gf">
                 <div>
                   <a
                     href="https://github.com/YadharthGC/obito"
                     target="_blank"
-                    title="Front-end"
+                    // title="Front-end"
                   >
                     <GitHubIcon id="oi" />
                   </a>
-                  <a
+                  {/* <a
                     href="https://github.com/YadharthGC/capstonenode"
                     target="_blank"
                     title="Back-end"
                   >
                     <GitHubIcon id="oi" />
-                  </a>
+                  </a> */}
                 </div>
                 <div>
                   <Typography
@@ -409,7 +413,7 @@ function About() {
                     onMouseEnter={handlePopoverOpena}
                     onMouseLeave={handlePopoverClosea}
                   >
-                    <MoreHorizIcon />
+                    <LibraryBooksIcon />
                   </Typography>
                   <Popover
                     data-target="#ta"
@@ -461,23 +465,25 @@ function About() {
                   />
                 </a>
               </div>
-              <div className="wt">BagIT-Ecommerce</div>
+              <div className="wt" style={{ textAlign: "center" }}>
+                BagIT-Ecommerce
+              </div>
               <div className="gf">
                 <div>
                   <a
                     href="https://github.com/YadharthGC/ecommerce"
                     target="_blank"
-                    title="Front-end"
+                    // title="Front-end"
                   >
                     <GitHubIcon id="oi" />
                   </a>
-                  <a
+                  {/* <a
                     href="https://github.com/YadharthGC/ecommerce_node"
                     target="_blank"
                     title="Back-end"
                   >
                     <GitHubIcon id="oi" />
-                  </a>
+                  </a> */}
                 </div>
                 <div>
                   <Typography
@@ -486,7 +492,7 @@ function About() {
                     onMouseEnter={handlePopoverOpen}
                     onMouseLeave={handlePopoverClose}
                   >
-                    <MoreHorizIcon />
+                    <LibraryBooksIcon />
                   </Typography>
                   <Popover
                     data-target="#tb"
@@ -539,23 +545,25 @@ function About() {
                   />
                 </a>
               </div>
-              <div className="wt">Web-Scrap</div>
+              <div className="wt" style={{ textAlign: "center" }}>
+                Web-Scrap
+              </div>
               <div className="gf">
                 <div>
                   <a
                     href="https://github.com/YadharthGC/webscrap"
                     target="_blank"
-                    title="Front-end"
+                    // title="Front-end"
                   >
                     <GitHubIcon id="oi" />
                   </a>
-                  <a
+                  {/* <a
                     href="https://github.com/YadharthGC/flipkartscrap"
                     target="_blank"
                     title="Back-end"
                   >
                     <GitHubIcon id="oi" />
-                  </a>
+                  </a> */}
                 </div>
                 <div>
                   <Typography
@@ -564,7 +572,7 @@ function About() {
                     onMouseEnter={handlePopoverOpenb}
                     onMouseLeave={handlePopoverCloseb}
                   >
-                    <MoreHorizIcon />
+                    <LibraryBooksIcon />
                   </Typography>
                   <Popover
                     id="mouse-over-popover"
@@ -615,23 +623,25 @@ function About() {
                   />
                 </a>
               </div>
-              <div className="wt">Blog_site</div>
+              <div className="wt" style={{ textAlign: "center" }}>
+                Blog_site
+              </div>
               <div className="gf">
                 <div>
                   <a
                     href="https://github.com/YadharthGC/blog"
                     target="_blank"
-                    title="Front-end"
+                    // title="Front-end"
                   >
                     <GitHubIcon id="oi" />
                   </a>
-                  <a
+                  {/* <a
                     href="https://github.com/YadharthGC/blog_node"
                     target="_blank"
                     title="Back-end"
                   >
                     <GitHubIcon id="oi" />
-                  </a>
+                  </a> */}
                 </div>
                 <div>
                   <Typography
@@ -640,7 +650,7 @@ function About() {
                     onMouseEnter={handlePopoverOpenz}
                     onMouseLeave={handlePopoverClosez}
                   >
-                    <MoreHorizIcon />
+                    <LibraryBooksIcon />
                   </Typography>
                   <Popover
                     id="mouse-over-popover"
@@ -690,13 +700,15 @@ function About() {
                   <img src="./images/cat.png" class="imgs" title="Cats_API" />
                 </a>
               </div>
-              <div className="wt">Cats_API</div>
+              <div className="wt" style={{ textAlign: "center" }}>
+                Cats_API
+              </div>
               <div className="gf">
                 <div>
                   <a
                     href="https://github.com/YadharthGC/cats"
                     target="_blank"
-                    title="Front-end"
+                    // title="Front-end"
                   >
                     <GitHubIcon id="oi" />
                   </a>
@@ -708,7 +720,7 @@ function About() {
                     onMouseEnter={handlePopoverOpeny}
                     onMouseLeave={handlePopoverClosey}
                   >
-                    <MoreHorizIcon />
+                    <LibraryBooksIcon />
                   </Typography>
                   <Popover
                     id="mouse-over-popover"
@@ -751,13 +763,15 @@ function About() {
                   <img src="./images/tv.png" class="imgs" title="TV_maze" />
                 </a>
               </div>
-              <div className="wt">TV_maze</div>
+              <div className="wt" style={{ textAlign: "center" }}>
+                TV_maze
+              </div>
               <div className="gf">
                 <div>
                   <a
                     href="https://github.com/YadharthGC/tvmaze"
                     target="_blank"
-                    title="Javascript"
+                    // title="Javascript"
                   >
                     <GitHubIcon id="oi" />
                   </a>
@@ -769,7 +783,7 @@ function About() {
                     onMouseEnter={handlePopoverOpenx}
                     onMouseLeave={handlePopoverClosex}
                   >
-                    <MoreHorizIcon />
+                    <LibraryBooksIcon />
                   </Typography>
                   <Popover
                     id="mouse-over-popover"
