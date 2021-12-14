@@ -345,7 +345,7 @@ body {
 
 #sectiona:hover {
     transition: 0.5s;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     border: none;
     background-image: linear-gradient(to right top, #1526e8, #0086ff, #00b9f4, #00e0a8, #bcfc80);
     border-radius: 6px;
