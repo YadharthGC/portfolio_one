@@ -163,7 +163,7 @@ function About() {
         </div>
       </div>
       <div className="container" id="con">
-        <div className="row" id="sectiona" style={{ backgroundColor: "white" }}>
+        <div className="row" id="sectiona">
           <div className="col-lg-6" style={{ paddingTop: "7px" }}>
             <div className="row">
               <div className="col-lg-5" id="parta">

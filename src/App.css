@@ -1,280 +1,288 @@
 html,
 body {
-    user-select: none;
-    scroll-behavior: smooth;
+  user-select: none;
+  scroll-behavior: smooth;
 }
 
 .name {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid;
-    background-image: url(./images/blue.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  background-image: url(./images/blue.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .hari {
-    color: white;
-    font-size: 200%;
-    font-family: 'Cinzel Decorative', cursive;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  color: white;
+  font-size: 200%;
+  font-family: "Cinzel Decorative", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .full {
-    font-size: 113%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-size: 113%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #con {
-    margin-top: 2%;
+  margin-top: 2%;
 }
 
 .hariimg {
-    width: 225px;
-    height: 190px;
-    object-fit: cover;
-    border-radius: 5px;
+  width: 225px;
+  height: 224px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 #parta {
-    padding: 0%;
-    margin: 0%;
+  padding: 0%;
+  margin: 0%;
 }
 
 #partb {
-    padding: 0%;
-    margin: 0%;
+  padding: 0%;
+  margin: 0%;
 }
 
 #partc {
-    padding: 0%;
-    margin: 0%;
-    font-family: 'Outfit', sans-serif;
+  padding: 0%;
+  margin: 0%;
+  font-family: "Outfit", sans-serif;
 }
 
 #partd {
-    padding: 0%;
-    margin: 0%;
-    font-family: 'Josefin Sans', sans-serif;
+  padding: 0%;
+  margin: 0%;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .keyans {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bolder;
-    font-size: 20px;
-    margin-top: 1%;
-    margin-bottom: 1%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .key {
-    color: grey;
-    font-size: 16px;
+  color: grey;
+  font-size: 16px;
 }
 
 .skilla {
-    font-family: 'Josefin Sans', sans-serif;
-    display: flex;
-    width: 80%;
-    flex-wrap: wrap;
-    row-gap: 5px;
-    column-gap: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  column-gap: 5px;
 }
 
 .skill {
-    border: solid 2px lightgray;
-    padding: 1px;
+  border: solid 2px lightgray;
+  padding: 1px;
 }
 
 .parte {
-    font-family: 'Outfit', sans-serif;
-    font-weight: bolder;
-    font-size: 20px;
-    margin: 2%
+  font-family: "Outfit", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 2%;
 }
 
 #email,
 #in,
 #git {
-    color: black
+  color: black;
 }
 
 #email:hover {
-    background-color: rgb(72, 77, 77);
-    border: solid 2px rgb(156, 148, 148);
-    color: white;
+  background-color: rgb(72, 77, 77);
+  border: solid 2px rgb(156, 148, 148);
+  color: white;
 }
 
 #in:hover {
-    background-color: rgb(72, 77, 77);
-    border: solid 2px rgb(156, 148, 148);
-    color: white;
+  background-color: rgb(72, 77, 77);
+  border: solid 2px rgb(156, 148, 148);
+  color: white;
 }
 
 #git:hover {
-    background-color: rgb(72, 77, 77);
-    border: solid 2px rgb(156, 148, 148);
-    color: white;
+  background-color: rgb(72, 77, 77);
+  border: solid 2px rgb(156, 148, 148);
+  color: white;
 }
 
 #partd {
-    font-family: 'Outfit', sans-serif;
-    font-weight: bolder;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 1%;
+  font-family: "Outfit", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1%;
 }
 
 .imga {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .resume {
-    background-color: lightblue;
-    color: white;
-    border: solid 2px lightgray;
+  background-color: lightblue;
+  color: white;
+  border: solid 2px lightgray;
 }
 
 .data {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    row-gap: 25px;
-    column-gap: 110px;
-    margin-top: 3%;
-    padding-bottom: 6%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  row-gap: 25px;
+  column-gap: 110px;
+  margin-top: 3%;
+  padding-bottom: 6%;
 }
 
 .dataone {
-    font-family: 'Outfit', sans-serif;
-    font-weight: bolder;
-    font-size: 20px;
-    width: 270px;
-    background-color: white;
+  font-family: "Outfit", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  width: 270px;
+  background-image: linear-gradient(
+    to right top,
+    #e2f07f,
+    #b2f5a1,
+    #8cf4c5,
+    #7deee3,
+    #8ae6f4
+  );
+  border-radius: 16px;
 }
 
 .spl {
-    color: white;
+  color: white;
 }
 
 .spl,
 .wd,
 .wi {
-    text-align: center;
+  text-align: center;
 }
 
 .wi {
-    margin-top: 4px;
+  margin-top: 4px;
 }
 
 .wt {
-    margin-top: 3.5%;
-    font-family: 'Josefin Sans', sans-serif;
+  margin-top: 3.5%;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .imgs {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    border: solid 1px black
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border: solid 1px black;
+  border-radius: 8px;
 }
 
 .main {
-    font-family: 'Cinzel Decorative', cursive;
+  font-family: "Cinzel Decorative", cursive;
 }
 
 #git,
 #in,
 #email {
-    font-size: 50px;
-    padding: 2%;
-    border: solid;
-    border-radius: 50%;
+  font-size: 50px;
+  padding: 2%;
+  border: solid;
+  border-radius: 50%;
 }
 
 .new {
-    font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .resumebtn {
-    margin-top: 2%;
-    margin-left: 1%;
+  margin-top: 2%;
+  margin-left: 1%;
 }
 
 #csicon,
 #cdicon,
 #paicon {
-    height: 41%;
-    width: 40%;
-    border: solid;
-    border-radius: 50%;
-    color: black;
+  height: 41%;
+  width: 40%;
+  border: solid;
+  border-radius: 50%;
+  color: black;
 }
 
 .develop {
-    font-family: 'Outfit', sans-serif;
-    color: rgb(71, 66, 66);
-    /* margin-top: 4%; */
-    height: 10vhvh;
-    font-weight: bolder;
-    /* display: flex;
+  font-family: "Outfit", sans-serif;
+  color: rgb(71, 66, 66);
+  /* margin-top: 4%; */
+  height: 10vhvh;
+  font-weight: bolder;
+  /* display: flex;
     justify-content: center;
     align-items: center; */
-    text-align: center;
-    background-color: rgb(200, 230, 240);
+  text-align: center;
+  background-color: rgb(200, 230, 240);
 }
 
 .connect {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1%;
 }
 
 .connectitems {
-    flex: 0.3;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .x {
-    font-family: 'Cinzel Decorative', cursive;
+  font-family: "Cinzel Decorative", cursive;
 }
 
 .y {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 500;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
 }
 
 #nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .skilla :hover {
-    background-color: lightblue;
+  background-color: lightblue;
 }
 
 .resume:hover {
-    background-color: rgb(87, 83, 83);
-    color: white;
+  background-color: rgb(87, 83, 83);
+  color: white;
 }
-
 
 /* #csicon:hover {
     background-color: aqua;
@@ -286,168 +294,234 @@ body {
     border: solid 6px blue;
 } */
 
-
 /* #paicon:hover {
     background-color: aqua;
     border: solid 6px blue;
 } */
 
 .imgs:hover {
-    transition: 0.5s;
-    transform: scale(1.1)
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 
 #abc {
-    min-height: 0px;
-    height: auto;
-    transition-duration: 275ms;
+  min-height: 0px;
+  height: auto;
+  transition-duration: 275ms;
 }
 
 #sks {
-    padding: 13px;
-    /* border-radius: 3px; */
-    border: solid lightskyblue;
+  padding: 13px;
+  /* border-radius: 3px; */
+  border: solid lightskyblue;
+  background-image: linear-gradient(
+    to right top,
+    #e2f07f,
+    #b2f5a1,
+    #8cf4c5,
+    #7deee3,
+    #8ae6f4
+  );
+  border-radius: 25px;
 }
 
 #sks:hover {
-    transition: 0.5s;
-    transform: scale(1.1);
-    background-image: linear-gradient(to right top, #1526e8, #0086ff, #00b9f4, #00e0a8, #bcfc80);
-    color: white;
-    border: none;
-    border-radius: 4px;
+  transition: 0.5s;
+  transform: scale(1.1);
+  background-image: linear-gradient(
+    to right top,
+    #1526e8,
+    #0086ff,
+    #00b9f4,
+    #00e0a8,
+    #bcfc80
+  );
+  color: white;
+  border: none;
+  border-radius: 4px;
 }
 
 #sks:hover #csicon {
-    background-image: linear-gradient(to bottom, #7ed8e0, #76e6d6, #89f1bf, #b1f9a1, #e4fb83);
-    border: solid 6px white;
+  background-image: linear-gradient(
+    to bottom,
+    #7ed8e0,
+    #76e6d6,
+    #89f1bf,
+    #b1f9a1,
+    #e4fb83
+  );
+  border: solid 6px white;
 }
 
 #sks:hover #paicon {
-    background-image: linear-gradient(to bottom, #7ed8e0, #76e6d6, #89f1bf, #b1f9a1, #e4fb83);
-    border: solid 6px white;
+  background-image: linear-gradient(
+    to bottom,
+    #7ed8e0,
+    #76e6d6,
+    #89f1bf,
+    #b1f9a1,
+    #e4fb83
+  );
+  border: solid 6px white;
 }
 
 #sks:hover #cdicon {
-    background-image: linear-gradient(to bottom, #7ed8e0, #76e6d6, #89f1bf, #b1f9a1, #e4fb83);
-    border: solid 6px white;
+  background-image: linear-gradient(
+    to bottom,
+    #7ed8e0,
+    #76e6d6,
+    #89f1bf,
+    #b1f9a1,
+    #e4fb83
+  );
+  border: solid 6px white;
 }
 
 #sk {
-    margin-bottom: 3%;
+  margin-bottom: 3%;
 }
 
 #sectiona {
-    margin-top: 7%;
-    padding-bottom: 1%;
-    border: solid lightblue;
+  margin-top: 7%;
+  padding-bottom: 1%;
+  border: solid lightblue;
+  background-image: linear-gradient(
+    to right top,
+    #e2f07f,
+    #b2f5a1,
+    #8cf4c5,
+    #7deee3,
+    #8ae6f4
+  );
+  border-radius: 15px;
 }
 
 #sectiona:hover {
-    transition: 0.5s;
-    /* transform: scale(1.1); */
-    border: none;
-    background-image: linear-gradient(to right top, #1526e8, #0086ff, #00b9f4, #00e0a8, #bcfc80);
-    border-radius: 6px;
-    color: white
+  transition: 0.5s;
+  /* transform: scale(1.1); */
+  border: none;
+  background-image: linear-gradient(
+    to right top,
+    #1526e8,
+    #0086ff,
+    #00b9f4,
+    #00e0a8,
+    #bcfc80
+  );
+  border-radius: 15px;
+  color: white;
 }
 
 .apple {
-    height: 41%;
-    width: 40%;
-    border: solid;
-    border-radius: 50%;
+  height: 41%;
+  width: 40%;
+  border: solid;
+  border-radius: 50%;
 }
 
 #ball {
-    width: 43px;
-    height: 48px
+  width: 43px;
+  height: 48px;
 }
 
 #xa,
 #xb,
 #xc {
-    font-size: 32px;
-    color: brown;
+  font-size: 32px;
+  color: brown;
 }
 
 #xa:hover {
-    color: blue
+  color: blue;
 }
 
 #xb:hover {
-    color: blue
+  color: blue;
 }
 
 #xc:hover {
-    color: blue
+  color: blue;
 }
 
 .gf {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #ta,
 #tb {
-    height: 100%;
-    width: 285px
+  height: 100%;
+  width: 285px;
 }
 
 #cat {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #oi {
-    color: black;
+  color: black;
 }
 
 #oi:hover {
-    color: rgb(42, 42, 218);
+  color: rgb(42, 42, 218);
 }
 
 #ole {
-    border: solid lightblue;
-    padding: 5px;
-    padding-top: 7px;
+  border: solid lightblue;
+  padding: 5px;
+  padding-top: 7px;
 }
 
 #ole:hover {
-    transition: 0.5s;
-    transform: scale(1.1);
-    background-image: linear-gradient(to right top, #1526e8, #0086ff, #00b9f4, #00e0a8, #bcfc80);
-    color: white;
-    border: none;
-    border-radius: 4px;
+  transition: 0.5s;
+  transform: scale(1.1);
+  background-image: linear-gradient(
+    to right top,
+    #1526e8,
+    #0086ff,
+    #00b9f4,
+    #00e0a8,
+    #bcfc80
+  );
+  color: white;
+  border: none;
+  border-radius: 4px;
 }
 
 #ole:hover #oi {
-    color: white;
+  color: white;
 }
 
 #ole:hover .imgs {
-    transition: 0.5s;
-    transform: scale(1.1)
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 
 .Portfolio {
-    background-image: radial-gradient(circle, #051937, #103d64, #136692, #0f93c0, #12c2eb);
+  background-image: radial-gradient(
+    circle,
+    #051937,
+    #103d64,
+    #136692,
+    #0f93c0,
+    #12c2eb
+  );
 }
 
 hr {
-    color: white !important;
-    opacity: 1.25 !important;
-    margin-top: 9%;
+  color: white !important;
+  opacity: 1.25 !important;
+  margin-top: 9%;
 }
 
 .new {
-    padding: 8px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+  padding: 8px;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 #skillhr {
-    margin-top: 3%;
+  margin-top: 3%;
 }
