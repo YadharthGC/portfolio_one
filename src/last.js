@@ -30,9 +30,9 @@ function Last() {
             </div>
             <div>
               <a
-                href="https://github.com/YadharthGC?tab=repositories"
+                href="https://github.com/YadharthGC"
                 target="_blank"
-                title="https://github.com/YadharthGC?tab=repositories"
+                title="https://github.com/YadharthGC"
               >
                 <GitHubIcon id="xc" />
               </a>

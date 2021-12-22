@@ -243,9 +243,9 @@ function About() {
                       <LinkedInIcon id="in" style={{ marginLeft: "2%" }} />
                     </a>
                     <a
-                      href="https://github.com/YadharthGC?tab=repositories"
+                      href="https://github.com/YadharthGC"
                       target="_blank"
-                      title="https://github.com/YadharthGC?tab=repositories"
+                      title="https://github.com/YadharthGC"
                     >
                       <GitHubIcon id="git" style={{ marginLeft: "2%" }} />
                     </a>
@@ -262,10 +262,10 @@ function About() {
                 </u>
               </div>
               <div>
-                Recently graduated Engineering Fresher who is ready to apply the
+                2021s-Engineering graduated Fresher who is ready to apply the
                 knowledge into practice.Skilled in MongoDB, Nodejs, Reactjs and
                 Linux. Strong Knowledge of website stacks HTML,CSS and
-                Javascript . With my native language Tamil, I am fine with
+                Javascript. With my native language Tamil, I am fine with
                 English and Telugu.
               </div>
               <div className="resumebtn">
@@ -316,9 +316,9 @@ function About() {
                 ></lord-icon>
               </div>
               <div className="wt">
-                Web design is the process of creating websites. It encompasses
-                several different aspects, including webpage layout, content
-                production and graphic design
+                Web design is a process of creating front-end design of a
+                website.It encompasses webpage layout,content production and
+                graphic design and so on.
               </div>
             </div>
 

@@ -236,12 +236,8 @@ body {
 .develop {
   font-family: "Outfit", sans-serif;
   color: rgb(71, 66, 66);
-  /* margin-top: 4%; */
   height: 10vhvh;
   font-weight: bolder;
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
   text-align: center;
   background-color: rgb(200, 230, 240);
 }
@@ -284,21 +280,6 @@ body {
   color: white;
 }
 
-/* #csicon:hover {
-    background-color: aqua;
-    border: solid 6px blue;
-}
-
-#cdicon:hover {
-    background-color: aqua;
-    border: solid 6px blue;
-} */
-
-/* #paicon:hover {
-    background-color: aqua;
-    border: solid 6px blue;
-} */
-
 .imgs:hover {
   transition: 0.5s;
   transform: scale(1.1);
@@ -312,7 +293,6 @@ body {
 
 #sks {
   padding: 13px;
-  /* border-radius: 3px; */
   border: solid lightskyblue;
   box-shadow: 4px 5px darkcyan;
   background-image: linear-gradient(
@@ -395,12 +375,14 @@ body {
     #8ae6f4
   );
   border-radius: 15px;
+  box-shadow: 3px 3px lightseagreen;
 }
 
 #sectiona:hover {
-  transition: 0.5s;
-  /* transform: scale(1.1); */
-  border: none;
+  margin-top: 7%;
+  padding-bottom: 1%;
+  /* transition: 0.5s; */
+  border: solid lightseagreen;
   background-image: linear-gradient(
     to right top,
     #1526e8,
