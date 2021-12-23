@@ -332,7 +332,7 @@ function About() {
               </div>
               <div className="resumebtn">
                 <a
-                  href="https://drive.google.com/file/d/1HDzlKSV14Wh6YQoSaM3yzVpLjgSNxuwY/view"
+                  href="https://drive.google.com/file/d/1jmTsBptlsr6lO9NnDndgBwD8h4q60Uap/view"
                   target="_blank"
                   style={{ textDecoration: "none" }}
                 >
