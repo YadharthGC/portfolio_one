@@ -9,6 +9,10 @@ import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import Popover from "@mui/material/Popover";
 import Typography from "@mui/material/Typography";
 import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
+import { useState, useEffect } from "react";
+import emailjs from "emailjs-com";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 
 function About() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -66,6 +70,55 @@ function About() {
   };
   const openz = Boolean(anchorElz);
 
+  // const [mail, setmail] = useState([]);
+
+  // let handlesubmit = () => {
+  //   function sendEmail(e) {
+  //     e.preventDefault();
+  //     emailjs.sendForm(
+  //       "service_gtc3w9p",
+  //       "template_nlt5vmz",
+  //       e.target,
+  //       user_bE0vdq7w382uzoz0VVYZ4).then(res=>{
+  //         console.log(res);
+  //       }).catch(err=>console.log(err))
+  //       }
+
+  //   }
+  // };
+
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_gtc3w9p",
+        "template_nlt5vmz",
+        e.target,
+        "user_bE0vdq7w382uzoz0VVYZ4"
+      )
+      .then((res) => {
+        console.log(res);
+        window.alert("Contact is sent");
+      })
+      .catch((err) => console.log(err));
+  }
+
+  function sendgmail(e) {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_kchbj0x",
+        "template_4bre9jo",
+        e.target,
+        "user_bE0vdq7w382uzoz0VVYZ4"
+      )
+      .then((res) => {
+        console.log(res);
+        window.alert("Message is sent");
+      })
+      .catch((err) => console.log(err));
+  }
+
   return (
     <div className="Portfolio">
       <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
@@ -116,9 +169,7 @@ function About() {
                     aria-current="page"
                     href="#sectionb"
                   >
-                    <span className="y" style={{ color: "black" }}>
-                      Skills
-                    </span>
+                    <span className="y">Skills</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -128,6 +179,15 @@ function About() {
                     href="#sectionc"
                   >
                     <span className="y"> Projects</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#sectiono"
+                  >
+                    <span className="y"> Contacts</span>
                   </a>
                 </li>
               </ul>
@@ -258,7 +318,9 @@ function About() {
             <div className="new">
               <div className="me">
                 <u>
-                  <span className="main">About me</span>
+                  <span className="main">
+                    About me <InfoOutlinedIcon />
+                  </span>
                 </u>
               </div>
               <div>
@@ -321,7 +383,6 @@ function About() {
                 graphic design and so on.
               </div>
             </div>
-
             <div className="dataone" id="sks">
               <div className="wd">
                 <span className="main">Web Development</span>
@@ -816,6 +877,99 @@ function About() {
                   {/* <MoreHorizIcon /> */}
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <hr id="skillhr" />
+        <div className="Contact" id="sectiono">
+          <div style={{ textAlign: "center" }}>
+            <span className="main" style={{ fontSize: "25px" }}>
+              <span style={{ color: "white" }}>Contact me</span>
+            </span>
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <span className="main">
+              <u style={{ color: "white" }}>contact-form</u>
+            </span>
+          </div>
+          <div className="aka">
+            <div className="vja">
+              <form className="forma" onSubmit={sendgmail}>
+                <div className="pk">
+                  <div className="usera">
+                    <div className="usergmail">
+                      <div className="sua">Gmail</div>
+                      <div>
+                        <input
+                          type="text"
+                          id="textgmail"
+                          name="usergmail"
+                          placeholder="Gmail"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="usermessage">
+                    <div>
+                      <div className="sua">Message</div>
+                      <div>
+                        <textarea
+                          id="textarea"
+                          name="usermessage"
+                          rows="6"
+                          cols="25"
+                          placeholder="Message"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="usersubmit">
+                    <div>
+                      <input type="submit" value="send" id="submit" />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          {/* <hr id="skillhr" /> */}
+
+          <div className="aka">
+            <div className="vja">
+              <form className="forma" onSubmit={sendEmail}>
+                <div className="pk">
+                  <div className="usera">
+                    <div className="usergmail">
+                      <div className="sua">
+                        My contact no.
+                        <CallOutlinedIcon />{" "}
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          id="textgmail"
+                          name="usermail"
+                          placeholder="Type mail to get my no."
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="usersubmit">
+                    <div>
+                      <input
+                        type="submit"
+                        value="receive"
+                        id="submit"
+                        style={{ marginTop: "29%" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
