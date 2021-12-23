@@ -3,15 +3,27 @@ body {
   user-select: none;
   scroll-behavior: smooth;
 }
-
+.hi {
+  font-size: 230%;
+  font-family: "Outfit", sans-serif;
+  color: white;
+}
+.newgc {
+  line-height: 52px;
+  padding-left: 4%;
+}
+.iam {
+  font-size: 382%;
+  font-family: "Cinzel Decorative", cursive;
+  color: white;
+}
 .name {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   border: solid;
-  background-image: url(./images/bz.jpg);
+  background-image: url(./images/p1.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -27,11 +39,32 @@ body {
 }
 
 .full {
-  font-size: 113%;
+  font-size: 164%;
   color: white;
   display: flex;
-  justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
   align-items: center;
+}
+#homeicons {
+  margin-top: -4%;
+  font-size: 40px;
+  color: white;
+}
+
+#homegit,
+#homelink,
+#homemail {
+  font-size: 32px;
+  color: white;
+}
+#homegit:hover {
+  color: #00b9f4;
+}
+#homemail:hover {
+  color: #00b9f4;
+}
+#homelink:hover {
+  color: #00b9f4;
 }
 
 #con {
@@ -39,8 +72,8 @@ body {
 }
 
 .hariimg {
-  width: 225px;
-  height: 224px;
+  width: 198px;
+  height: 188px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -142,7 +175,12 @@ body {
 }
 
 .resume {
-  background-color: lightblue;
+  background-color: rgb(87, 83, 83);
+  color: white;
+  border-radius: 5px;
+}
+.resume:hover {
+  background-color: #00b9f4;
   color: white;
   border: solid 2px lightgray;
 }
@@ -283,11 +321,6 @@ li:hover .y {
   background-color: lightblue;
 }
 
-.resume:hover {
-  background-color: rgb(87, 83, 83);
-  color: white;
-}
-
 .imgs:hover {
   transition: 0.5s;
   transform: scale(1.1);
@@ -369,9 +402,11 @@ li:hover .y {
 #sk {
   margin-bottom: 3%;
 }
-
+#news {
+  margin-top: 3%;
+}
 #sectiona {
-  margin-top: 7%;
+  margin-top: 3%;
   padding-bottom: 1%;
   border: solid lightblue;
   background-image: linear-gradient(
@@ -387,7 +422,7 @@ li:hover .y {
 }
 
 #sectiona:hover {
-  margin-top: 7%;
+  margin-top: 3%;
   padding-bottom: 1%;
   /* transition: 0.5s; */
   border: solid lightseagreen;

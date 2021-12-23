@@ -155,11 +155,7 @@ function About() {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="#sectiona"
-                  >
+                  <a class="nav-link active" aria-current="page" href="#news">
                     <span className="y"> About</span>
                   </a>
                 </li>
@@ -198,7 +194,74 @@ function About() {
       <div>
         <div className="name" id="sectionm">
           <div className="bg">
-            <div className="hari">
+            <div className="newgc">
+              <div className="hi">Hi there,</div>
+              <div className="iam">I am Hari Yadharth GC</div>
+              <div className="full">
+                <u style={{ display: "flex" }}>
+                  I am a &nbsp;
+                  <Typical
+                    loop={Infinity}
+                    steps={[
+                      "Front-end Developer",
+                      2000,
+                      "Back-end Developer",
+                      2000,
+                      "Full-stack Developer",
+                      2000,
+                      "Web Developer",
+                      2000,
+                    ]}
+                  />
+                </u>
+              </div>
+              <div id="homeicons">
+                <a
+                  href="https://github.com/YadharthGC"
+                  target="_blank"
+                  title="https://github.com/YadharthGC"
+                >
+                  <GitHubIcon id="homegit" />
+                </a>
+                --
+                <a
+                  href="https://www.linkedin.com/in/yadharth/"
+                  target="_blank"
+                  title="https://www.linkedin.com/in/yadharth/"
+                >
+                  <LinkedInIcon id="homelink" />
+                </a>
+                --
+                <a
+                  href="mailto:ganeshyadharth@gmail.com"
+                  target="_blank"
+                  title="ganeshyadharth@gmail.com"
+                >
+                  <EmailIcon id="homemail" />
+                </a>
+              </div>
+              <div className="resumebtn">
+                <a
+                  href="https://drive.google.com/file/d/1jmTsBptlsr6lO9NnDndgBwD8h4q60Uap/view"
+                  target="_blank"
+                  style={{ textDecoration: "none" }}
+                >
+                  <button className="resume">
+                    <span className="main">
+                      Resume
+                      <lord-icon
+                        src="https://cdn.lordicon.com/puvaffet.json"
+                        trigger="loop"
+                        colors="primary:#121331,secondary:#08a88a"
+                        id="ball"
+                      ></lord-icon>
+                      &#8594;
+                    </span>
+                  </button>
+                </a>
+              </div>
+            </div>
+            {/* <div className="hari">
               <span style={{ fontFamily: "'Outfit', sans-serif" }}>I am</span>
               &nbsp; Hari Yadharth GC
             </div>
@@ -218,10 +281,22 @@ function About() {
                   ]}
                 />
               </u>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
+      <div style={{ textAlign: "center" }} id="news">
+        <span className="main" style={{ fontSize: "25px" }}>
+          <span style={{ color: "white" }}>
+            <u>About Me</u>
+          </span>
+        </span>
+      </div>
+      {/* <div style={{ textAlign: "center" }}>
+        <span className="main">
+          <u style={{ color: "white" }}>Projects Developed by me</u>
+        </span>
+      </div> */}
       <div className="container" id="con">
         <div className="row" id="sectiona">
           <div className="col-lg-6" style={{ paddingTop: "7px" }}>
@@ -286,7 +361,7 @@ function About() {
                   </span>
                   ganeshyadharth@gmail.com
                 </div>
-                <div className="keyans" style={{ marginTop: "3%" }}>
+                {/* <div className="keyans" style={{ marginTop: "3%" }}>
                   <div className="icons">
                     <a
                       href="mailto:ganeshyadharth@gmail.com"
@@ -310,7 +385,7 @@ function About() {
                       <GitHubIcon id="git" style={{ marginLeft: "2%" }} />
                     </a>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -330,7 +405,7 @@ function About() {
                 Javascript. With my native language Tamil, I am fine with
                 English and Telugu.
               </div>
-              <div className="resumebtn">
+              {/* <div className="resumebtn">
                 <a
                   href="https://drive.google.com/file/d/1jmTsBptlsr6lO9NnDndgBwD8h4q60Uap/view"
                   target="_blank"
@@ -349,7 +424,7 @@ function About() {
                     </span>
                   </button>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -952,7 +1027,7 @@ function About() {
                           type="text"
                           id="textgmail"
                           name="usermail"
-                          placeholder="Type mail to get my no."
+                          placeholder="Enter your gmail"
                           required
                         />
                       </div>
