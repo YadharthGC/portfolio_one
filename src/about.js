@@ -208,13 +208,13 @@ function About() {
                   loop={Infinity}
                   steps={[
                     "Front-end Developer",
-                    1000,
+                    2000,
                     "Back-end Developer",
-                    1000,
+                    2000,
                     "Full-stack Developer",
-                    1000,
+                    2000,
                     "Web Developer",
-                    1000,
+                    2000,
                   ]}
                 />
               </u>

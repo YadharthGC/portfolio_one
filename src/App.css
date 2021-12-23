@@ -264,11 +264,13 @@ body {
   font-family: "Outfit", sans-serif;
   font-weight: 500;
 }
-.y:hover {
-  font-family: "Cinzel Decorative", cursive;
-  font-size: 11.5px;
-  color: #136692;
-  text-decoration: underline;
+li:hover {
+  background-color: blue !important;
+}
+li:hover .y {
+  font-family: "Cinzel Decorative", cursive !important;
+  color: white !important;
+  font-weight: bolder;
 }
 
 #nav {
