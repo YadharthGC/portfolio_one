@@ -198,7 +198,7 @@ function About() {
               <div className="hi">Hi there,</div>
               <div className="iam">I am Hari Yadharth GC</div>
               <div className="full">
-                <u style={{ display: "flex" }}>
+                <span style={{ display: "flex" }}>
                   I am a &nbsp;
                   <Typical
                     loop={Infinity}
@@ -213,7 +213,7 @@ function About() {
                       2000,
                     ]}
                   />
-                </u>
+                </span>
               </div>
               <div id="homeicons">
                 <a
