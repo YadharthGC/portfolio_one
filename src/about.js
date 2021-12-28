@@ -70,23 +70,6 @@ function About() {
   };
   const openz = Boolean(anchorElz);
 
-  // const [mail, setmail] = useState([]);
-
-  // let handlesubmit = () => {
-  //   function sendEmail(e) {
-  //     e.preventDefault();
-  //     emailjs.sendForm(
-  //       "service_gtc3w9p",
-  //       "template_nlt5vmz",
-  //       e.target,
-  //       user_bE0vdq7w382uzoz0VVYZ4).then(res=>{
-  //         console.log(res);
-  //       }).catch(err=>console.log(err))
-  //       }
-
-  //   }
-  // };
-
   function sendEmail(e) {
     e.preventDefault();
     emailjs
@@ -261,42 +244,15 @@ function About() {
                 </a>
               </div>
             </div>
-            {/* <div className="hari">
-              <span style={{ fontFamily: "'Outfit', sans-serif" }}>I am</span>
-              &nbsp; Hari Yadharth GC
-            </div>
-            <div className="full">
-              <u>
-                <Typical
-                  loop={Infinity}
-                  steps={[
-                    "Front-end Developer",
-                    2000,
-                    "Back-end Developer",
-                    2000,
-                    "Full-stack Developer",
-                    2000,
-                    "Web Developer",
-                    2000,
-                  ]}
-                />
-              </u>
-            </div> */}
           </div>
         </div>
       </div>
       <div style={{ textAlign: "center" }} id="news">
         <span className="main" style={{ fontSize: "25px" }}>
-          <span style={{ color: "white" }}>
-            <u>About Me</u>
-          </span>
+          <span style={{ color: "white" }}>About Me</span>
         </span>
       </div>
-      {/* <div style={{ textAlign: "center" }}>
-        <span className="main">
-          <u style={{ color: "white" }}>Projects Developed by me</u>
-        </span>
-      </div> */}
+
       <div className="container" id="con">
         <div className="row" id="sectiona">
           <div className="col-lg-6" style={{ paddingTop: "7px" }}>
@@ -361,31 +317,6 @@ function About() {
                   </span>
                   ganeshyadharth@gmail.com
                 </div>
-                {/* <div className="keyans" style={{ marginTop: "3%" }}>
-                  <div className="icons">
-                    <a
-                      href="mailto:ganeshyadharth@gmail.com"
-                      target="_blank"
-                      title="ganeshyadharth@gmail.com"
-                    >
-                      <EmailIcon id="email" style={{ marginLeft: "5%" }} />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/yadharth/"
-                      target="_blank"
-                      title="https://www.linkedin.com/in/yadharth/"
-                    >
-                      <LinkedInIcon id="in" style={{ marginLeft: "2%" }} />
-                    </a>
-                    <a
-                      href="https://github.com/YadharthGC"
-                      target="_blank"
-                      title="https://github.com/YadharthGC"
-                    >
-                      <GitHubIcon id="git" style={{ marginLeft: "2%" }} />
-                    </a>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
@@ -405,26 +336,6 @@ function About() {
                 Javascript. With my native language Tamil, I am fine with
                 English and Telugu.
               </div>
-              {/* <div className="resumebtn">
-                <a
-                  href="https://drive.google.com/file/d/1jmTsBptlsr6lO9NnDndgBwD8h4q60Uap/view"
-                  target="_blank"
-                  style={{ textDecoration: "none" }}
-                >
-                  <button className="resume">
-                    <span className="main">
-                      Resume
-                      <lord-icon
-                        src="https://cdn.lordicon.com/puvaffet.json"
-                        trigger="loop"
-                        colors="primary:#121331,secondary:#08a88a"
-                        id="ball"
-                      ></lord-icon>
-                      &#8594;
-                    </span>
-                  </button>
-                </a>
-              </div> */}
             </div>
           </div>
         </div>
@@ -434,9 +345,7 @@ function About() {
             <span className="main" style={{ fontSize: "25px" }}>
               Specilizing in
             </span>
-            <div className="main">
-              <u>Skills</u>
-            </div>
+            <div className="main">Skills</div>
           </div>
           <div className="data" id="sk">
             <div className="dataone" id="sks">
@@ -508,7 +417,7 @@ function About() {
           </div>
           <div style={{ textAlign: "center" }}>
             <span className="main">
-              <u style={{ color: "white" }}>Projects Developed by me</u>
+              <span style={{ color: "white" }}>Projects Developed by me</span>
             </span>
           </div>
           <div className="data">
@@ -534,13 +443,6 @@ function About() {
                   >
                     <GitHubIcon id="oi" />
                   </a>
-                  {/* <a
-                    href="https://github.com/YadharthGC/capstonenode"
-                    target="_blank"
-                    title="Back-end"
-                  >
-                    <GitHubIcon id="oi" />
-                  </a> */}
                 </div>
                 <div>
                   <Typography
@@ -609,17 +511,9 @@ function About() {
                   <a
                     href="https://github.com/YadharthGC/ecommerce"
                     target="_blank"
-                    // title="Front-end"
                   >
                     <GitHubIcon id="oi" />
                   </a>
-                  {/* <a
-                    href="https://github.com/YadharthGC/ecommerce_node"
-                    target="_blank"
-                    title="Back-end"
-                  >
-                    <GitHubIcon id="oi" />
-                  </a> */}
                 </div>
                 <div>
                   <Typography
@@ -689,17 +583,9 @@ function About() {
                   <a
                     href="https://github.com/YadharthGC/webscrap"
                     target="_blank"
-                    // title="Front-end"
                   >
                     <GitHubIcon id="oi" />
                   </a>
-                  {/* <a
-                    href="https://github.com/YadharthGC/flipkartscrap"
-                    target="_blank"
-                    title="Back-end"
-                  >
-                    <GitHubIcon id="oi" />
-                  </a> */}
                 </div>
                 <div>
                   <Typography
@@ -745,7 +631,6 @@ function About() {
                       </div>
                     </Typography>
                   </Popover>
-                  {/* <MoreHorizIcon /> */}
                 </div>
               </div>
             </div>
@@ -764,20 +649,9 @@ function About() {
               </div>
               <div className="gf">
                 <div>
-                  <a
-                    href="https://github.com/YadharthGC/blog"
-                    target="_blank"
-                    // title="Front-end"
-                  >
+                  <a href="https://github.com/YadharthGC/blog" target="_blank">
                     <GitHubIcon id="oi" />
                   </a>
-                  {/* <a
-                    href="https://github.com/YadharthGC/blog_node"
-                    target="_blank"
-                    title="Back-end"
-                  >
-                    <GitHubIcon id="oi" />
-                  </a> */}
                 </div>
                 <div>
                   <Typography
@@ -823,7 +697,6 @@ function About() {
                       </div>
                     </Typography>
                   </Popover>
-                  {/* <MoreHorizIcon /> */}
                 </div>
               </div>
             </div>
@@ -841,11 +714,7 @@ function About() {
               </div>
               <div className="gf">
                 <div>
-                  <a
-                    href="https://github.com/YadharthGC/cats"
-                    target="_blank"
-                    // title="Front-end"
-                  >
+                  <a href="https://github.com/YadharthGC/cats" target="_blank">
                     <GitHubIcon id="oi" />
                   </a>
                 </div>
@@ -889,7 +758,6 @@ function About() {
                       </div>
                     </Typography>
                   </Popover>
-                  {/* <MoreHorizIcon /> */}
                 </div>
               </div>
             </div>
@@ -907,7 +775,6 @@ function About() {
                   <a
                     href="https://github.com/YadharthGC/tvmaze"
                     target="_blank"
-                    // title="Javascript"
                   >
                     <GitHubIcon id="oi" />
                   </a>
@@ -949,7 +816,6 @@ function About() {
                       </div>
                     </Typography>
                   </Popover>
-                  {/* <MoreHorizIcon /> */}
                 </div>
               </div>
             </div>
@@ -964,7 +830,7 @@ function About() {
           </div>
           <div style={{ textAlign: "center" }}>
             <span className="main">
-              <u style={{ color: "white" }}>contact-form</u>
+              <span style={{ color: "white" }}>contact-form</span>
             </span>
           </div>
           <div className="aka">
@@ -1010,8 +876,6 @@ function About() {
             </div>
           </div>
 
-          {/* <hr id="skillhr" /> */}
-
           <div className="aka">
             <div className="vja">
               <form className="forma" onSubmit={sendEmail}>
@@ -1020,7 +884,7 @@ function About() {
                     <div className="usergmail">
                       <div className="sua">
                         My contact no.
-                        <CallOutlinedIcon />{" "}
+                        <CallOutlinedIcon />
                       </div>
                       <div>
                         <input
