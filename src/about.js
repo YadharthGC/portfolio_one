@@ -702,6 +702,80 @@ function About() {
             </div>
             <div className="dataone" id="ole">
               <div className="wi">
+                <a href="https://yadharthauth.netlify.app/" target="_blank">
+                  <img
+                    src="./images/url.png"
+                    class="imgs"
+                    title=" URL_Shortener"
+                  />
+                </a>
+              </div>
+              <div className="wt" style={{ textAlign: "center" }}>
+                URL_Shortener
+              </div>
+              <div className="gf">
+                <div>
+                  <a
+                    href="https://github.com/YadharthGC/authenthication_node"
+                    target="_blank"
+                  >
+                    <GitHubIcon id="oi" />
+                  </a>
+                </div>
+                <div>
+                  <Typography
+                    aria-owns={open ? "mouse-over-popover" : undefined}
+                    aria-haspopup="true"
+                    onMouseEnter={handlePopoverOpenx}
+                    onMouseLeave={handlePopoverClosex}
+                  >
+                    <LibraryBooksIcon />
+                  </Typography>
+                  <Popover
+                    id="mouse-over-popover"
+                    sx={{
+                      pointerEvents: "none",
+                    }}
+                    open={openx}
+                    anchorEl={anchorElx}
+                    anchorOrigin={{
+                      vertical: "bottom",
+                      horizontal: "right",
+                    }}
+                    transformOrigin={{
+                      vertical: "bottom",
+                      horizontal: "right",
+                    }}
+                    onClose={handlePopoverClosex}
+                    disableRestoreFocus
+                  >
+                    <Typography id="ta">
+                      <div className="main">Library</div>
+                      <div className="skilla" id="cat">
+                        <div className="skill">Reactjs</div>
+                        <div className="skill">Nodejs</div>
+                      </div>
+
+                      <div className="main">NPMs</div>
+                      <div className="skilla" style={{ width: "100%" }}>
+                        <div className="skill">Nodemailer</div>
+                        <div className="skill">MongoDB</div>
+                        <div className="skill">Mongoose</div>
+                        <div className="skill">Shortid</div>
+                        <div className="skill">Cors</div>
+                        <div className="skill">RandomToken</div>
+                        <div className="skill">Axios</div>
+                        <div className="skill">Express</div>
+                        <div className="skill">Bcrypt</div>
+                        <div className="skill">JSONwebToken</div>
+                      </div>
+                    </Typography>
+                  </Popover>
+                </div>
+              </div>
+            </div>
+            <div className="dataone" id="ole">
+              <div className="wi">
                 <a
                   href="https://yadharthcatsaxios.netlify.app/"
                   target="_blank"
@@ -755,64 +829,6 @@ function About() {
                       <div className="skilla" style={{ width: "100%" }}>
                         <div className="skill">Bootstrap</div>
                         <div className="skill">Axios</div>
-                      </div>
-                    </Typography>
-                  </Popover>
-                </div>
-              </div>
-            </div>
-            <div className="dataone" id="ole">
-              <div className="wi">
-                <a href="https://yadharthtvmaze.netlify.app/" target="_blank">
-                  <img src="./images/tv.png" class="imgs" title="TV_maze" />
-                </a>
-              </div>
-              <div className="wt" style={{ textAlign: "center" }}>
-                TV_maze
-              </div>
-              <div className="gf">
-                <div>
-                  <a
-                    href="https://github.com/YadharthGC/tvmaze"
-                    target="_blank"
-                  >
-                    <GitHubIcon id="oi" />
-                  </a>
-                </div>
-                <div>
-                  <Typography
-                    aria-owns={open ? "mouse-over-popover" : undefined}
-                    aria-haspopup="true"
-                    onMouseEnter={handlePopoverOpenx}
-                    onMouseLeave={handlePopoverClosex}
-                  >
-                    <LibraryBooksIcon />
-                  </Typography>
-                  <Popover
-                    id="mouse-over-popover"
-                    sx={{
-                      pointerEvents: "none",
-                    }}
-                    open={openx}
-                    anchorEl={anchorElx}
-                    anchorOrigin={{
-                      vertical: "bottom",
-                      horizontal: "right",
-                    }}
-                    transformOrigin={{
-                      vertical: "bottom",
-                      horizontal: "right",
-                    }}
-                    onClose={handlePopoverClosex}
-                    disableRestoreFocus
-                  >
-                    <Typography id="ta">
-                      <div className="main">Library</div>
-                      <div className="skilla" id="cat">
-                        <div className="skill">Javascript</div>
-                        <div className="skill">HTML</div>
-                        <div className="skill">CSS</div>
-                        <div className="skill">Bootstrap</div>
                       </div>
                     </Typography>
                   </Popover>
